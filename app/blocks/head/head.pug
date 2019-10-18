@@ -1,0 +1,17 @@
+mixin head(data)
+    - data = data || {};
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name="theme-color" content="#1c1c40")
+        link(rel="shortcut icon" href="img/favicon.png" type="image/png")  
+        link(rel="icon" type="image/png" href="../img/favicons/16x16.png" sizes="16x16")
+        link(rel="icon" type="image/png" href="../img/favicons/32x32.png" sizes="32x32")
+        link(rel="icon" type="image/png" href="../img/favicons/96x96.png" sizes="96x96")
+        link(rel='stylesheet', href='../styles/normalize.css', media="all")
+        link(rel='stylesheet', href='../styles/fonts.css', media="all")
+        link(rel='stylesheet', href='../styles/animate.css', media="all")
+        link(rel='stylesheet', href='../styles/style.css', media="all")
+        title!=data.title
+        meta(name="description" content = data.description)
+        meta(name="keywords" content = data.keywords)

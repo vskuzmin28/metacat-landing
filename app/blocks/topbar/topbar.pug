@@ -1,0 +1,17 @@
+mixin topbar(data)
+    - data = data || {};
+    nav.bar.bar_top(role = data.role)
+        .container.bar__container
+            a.bar__logo(href="#" title="")
+                img(src='../img/' + data.logo + '.png' alt="@@")
+            .bar__other
+                ul.navigation.bar__navigation
+                    each item in data.items
+                        li.navigation__item
+                            a.navigation__link(href = item.link title = item.title)!=item.value
+                    
+                a.phone-link.bar__phone-link(href = 'tel:' + data.phonenumber title="")
+                    span.icon-phone.phone-link__icon
+                    span.phone-link__number!=data.phonenumber
+
+                a.menu.icon-menu.bar__menu(href="#" title="")

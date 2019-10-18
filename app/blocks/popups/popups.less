@@ -1,0 +1,71 @@
+// popup
+
+.popup {
+    position: relative;
+    max-width: 320px;
+    padding: 40px;
+    background: @color-white;
+    border-radius: 0;
+    //border: 4px solid @yellow;
+    display: flex;
+    flex-direction: column;
+
+    &_long {
+        max-width: 660px;
+        height: 500px;
+        overflow: auto;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 60px;
+        font-size: 32px;
+        font-family: 'serifb', sans-serif;
+        //color: @black;
+    }
+
+    &__close {
+        top: 20px;
+        right: 20px;
+        position: absolute;
+        display: block;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    &__icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    &__content {
+        font-size: 16px;
+        font-family: 'lator', sans-serif;
+        line-height: 20px;
+        //color: @black;
+    }
+
+    &__form {
+        flex-direction: column;
+        justify-content: center;
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .form__input {
+            width: 100%;
+        }
+
+    }
+
+}

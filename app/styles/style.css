@@ -1,0 +1,335 @@
+a {
+  cursor: pointer;
+  color: #000;
+  font-weight: 400;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+a,
+a:hover,
+.button,
+.slider-buttons__button,
+input {
+  transition: all 0.5s ease-in-out;
+}
+body {
+  margin: 0;
+  background: #fff;
+  cursor: default;
+  overflow-x: hidden;
+}
+body *::-moz-selection {
+  color: #fff;
+}
+body *::-webkit-selection {
+  color: #fff;
+}
+body *::selection {
+  color: #fff;
+}
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+.form {
+  display: flex;
+}
+.form__title {
+  font-size: 22px;
+  font-family: 'lator', sans-serif;
+  color: #000;
+}
+.form__body {
+  display: flex;
+  flex-direction: row;
+}
+.form__input[type='text'] {
+  padding: 0 22px;
+  width: 300px;
+  height: 52px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'lator', sans-serif;
+  color: #000;
+}
+.form__input[type='submit'] {
+  width: 230px;
+  height: 52px;
+  font-size: 18px;
+  font-family: 'latob', sans-serif;
+  font-weight: bold;
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+.form__small-desc {
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: 'lator', sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__small-desc a {
+  opacity: 0.3;
+}
+.form__small-desc a:hover {
+  opacity: 1;
+}
+.block {
+  position: relative;
+  width: 50%;
+}
+@media screen and (max-width: 1600px) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .block {
+    position: relative;
+    width: 100%;
+  }
+  .form__input[type='submit'] {
+    width: 100%;
+  }
+}
+.footer {
+  padding: 20px 0;
+  background: #233456;
+  height: auto;
+}
+@media screen and (max-width: 540px) {
+  footer .bar {
+    text-align: center;
+  }
+  footer .bar__logo {
+    margin-bottom: 40px;
+  }
+  footer .bar__other,
+  footer .bar__container {
+    flex-direction: column;
+  }
+  footer .bar__phone-link {
+    margin: 20px 0;
+    display: block;
+  }
+}
+.header {
+  position: relative;
+  height: 470px;
+  background: #FF5A64;
+}
+.bar_top {
+  height: 60px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
+}
+.bar__logo_small img {
+  width: 90%;
+  height: auto;
+}
+.bar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bar__other {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bar__other_col {
+  flex-direction: column;
+}
+.bar__phone-link {
+  margin-left: 52px;
+}
+.bar__menu {
+  display: none;
+}
+.bar__link {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navigation__link {
+  padding: 0 16px;
+  display: flex;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #233456;
+  text-decoration: none;
+}
+.navigation__link:hover {
+  text-decoration: none;
+  color: #2185FB;
+}
+.phone-link {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.phone-link_white span {
+  color: #fff;
+}
+.phone-link:hover {
+  color: #FF5A64;
+  text-decoration: none;
+}
+.phone-link__icon {
+  margin-top: -4px;
+  font-size: 16px;
+  color: #000;
+}
+.phone-link__number {
+  margin-left: 10px;
+}
+.menu {
+  margin: 6px 0 0 20px;
+  height: 32px;
+}
+@media screen and (max-width: 540px) {
+  .bar__phone-link {
+    display: none;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .bar__menu {
+    display: block;
+    margin-left: 40px;
+    font-size: 28px;
+    text-decoration: none;
+  }
+  .bar__navigation {
+    display: none;
+  }
+}
+.popup {
+  position: relative;
+  max-width: 320px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+}
+.popup_long {
+  max-width: 660px;
+  height: 500px;
+  overflow: auto;
+}
+.popup__title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 32px;
+  font-family: 'serifb', sans-serif;
+}
+.popup__close {
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  display: block;
+}
+.popup__close:hover {
+  transform: rotate(360deg);
+}
+.popup__icon {
+  width: 22px;
+  height: 22px;
+}
+.popup__content {
+  font-size: 16px;
+  font-family: 'lator', sans-serif;
+  line-height: 20px;
+}
+.popup__form {
+  flex-direction: column;
+  justify-content: center;
+}
+.popup__form input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.popup__form input:last-child {
+  margin-bottom: 0;
+}
+.popup__form .form__input {
+  width: 100%;
+}
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 60px;
+}
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/

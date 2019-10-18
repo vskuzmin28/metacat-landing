@@ -1,0 +1,171 @@
+// fonts & variables
+
+@import '../styles/helpers/variables.less';
+@import '../styles/helpers/sprite.less';
+
+// SETTINGS //
+
+a {
+  cursor: pointer;
+  color: @color-black;
+  font-weight: 400;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 1;
+  }
+
+}
+
+// animation
+
+a, a:hover, .button, .slider-buttons__button, input {
+	transition: all 0.5s ease-in-out;
+}
+
+// body
+
+body {
+  margin: 0;
+  background: @color-white;
+	cursor: default;
+  overflow-x: hidden;
+}
+
+// selection
+
+body *::-moz-selection {
+  //background: @yellow;
+  color: @color-white;
+}
+
+body *::-webkit-selection {
+  //background: @yellow;
+  color: @color-white;
+}
+
+body *::selection {
+  //background: @yellow;
+  color: @color-white;
+}
+
+// container
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+  
+  &_xs {
+
+  }
+
+  &_xl {
+
+  }
+
+}
+
+// form
+
+.form {
+  display: flex;
+
+  &__title {
+      font-size: 22px;
+      font-family: 'lator', sans-serif;
+      color: @color-black;
+  }
+
+  &__body {
+      display: flex;
+      flex-direction: row;
+  }
+
+  &__input[type='text'] {
+      padding: 0 22px;
+      width: 300px;
+      height: 52px;
+      //border: 2px solid @gray;
+      outline: none;
+      box-sizing: border-box;
+      font-size: 18px;
+      font-family: 'lator', sans-serif;
+      color: @color-black;
+
+      &:hover, &:focus {
+          //border-color: @yellow;
+      }
+  }
+
+  &__input[type='submit'] {
+      width: 230px;
+      height: 52px;
+      //background: @yellow;
+      font-size: 18px;
+      font-family: 'latob', sans-serif;
+      font-weight: bold;
+      border: 0;
+      outline: none;
+      color: @color-white;
+      cursor: pointer;
+
+      &:hover {
+          //background: @yellow-light;
+      }
+
+      &:focus {
+          //background: @yellow-dark;
+      }
+  }
+
+  &__small-desc {
+      margin-top: 8px;
+      font-size: 14px;
+      font-family: 'lator', sans-serif;
+      color: rgba(0, 0, 0, 0.3);
+
+      a {
+          opacity: 0.3;
+
+          &:hover {
+              opacity: 1;
+          }
+
+      }
+
+  }
+
+}
+
+// blocks
+
+.block {
+  position: relative;
+  width: 50%;
+
+  &_gray {
+    //background: @gray-light;
+  }
+
+  &_blue {
+    //background: @blue-dark;
+  }
+
+}
+
+@media screen and (max-width: @desktop) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .block {
+    position: relative;
+    width: 100%;
+  }
+
+  .form__input[type='submit'] {
+    width: 100%;
+  }
+
+}

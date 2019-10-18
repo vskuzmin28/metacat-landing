@@ -1,0 +1,55 @@
+include ../blocks/head/head
+include ../blocks/header/header
+include ../blocks/topbar/topbar
+include ../blocks/footer/footer
+
+doctype html
+html(lang='ru')
+  +head({
+    title: 'TITLE',
+    keywords: '',
+    description: ''
+  })
+  body
+
+    // topbar
+    +topbar({
+      role: 'navigation',
+      logo: 'logo',
+      items: [
+        {link: '#services', title: '', value: 'Услуги'},
+        {link: '#projects', title: '', value: 'Проекты'},
+        {link: '#about', title: '', value: 'Кто мы'},
+        {link: '#contacts', title: '', value: 'Контакты'}
+      ],
+      phonenumber: '7 (846) 215-07-80'
+
+    })
+
+    // header
+    +header({
+      role: 'header',
+
+    })
+
+    // services
+
+    // completed projects
+
+    // experts
+
+    // projects
+
+    // footer
+    +footer({
+      role: 'footer',
+      logo: 'logo-white',
+      phonenumber: '7 (846) 215-07-80'
+    })
+
+    // scripts
+    script(src='../js/jquery-3.4.1.min.js')
+    script(src='../js/jquery.mask.min.js')
+    script(src='../js/wow.js')
+    script(src='../js/jquery.bpopup.min.js')
+    script(src='../js/scripts.js')
