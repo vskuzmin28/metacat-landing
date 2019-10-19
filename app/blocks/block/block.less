@@ -1,0 +1,52 @@
+// block
+
+.block {
+    color: @color-blue-dark;
+
+    &__title {
+        margin: 0;
+        padding: 0;
+        font-family: Muller;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+
+    &__desc {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 42px;
+        margin-top: 22px;
+        font-family: Muller;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        //flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-right: 34px;
+        margin-bottom: 34px;
+        width: 50%;
+        padding: 48px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        span {
+            font-size: 66px;
+        }
+    }
+
+}

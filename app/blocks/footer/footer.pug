@@ -2,11 +2,10 @@ mixin footer(data)
     - data = data || {};
     footer.footer.bar(class = data.class role = data.role)
         .container.bar__container
-            a.bar__logo(href="#" title="")
+            a.bar__logo.bar__logo_small(href="#" title="")
                 img(src='../img/' + data.logo + '.png' alt="@@")
             .bar__other
                 a.bar__link(href="#" title="") Политика конфиденциальности
                 a.phone-link.phone-link_white.bar__phone-link(href = 'tel:' + data.phonenumber title="")
                     span.icon-phone.phone-link__icon
                     span.phone-link__number!=data.phonenumber
-                

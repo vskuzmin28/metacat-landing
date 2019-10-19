@@ -2,6 +2,8 @@ include ../blocks/head/head
 include ../blocks/header/header
 include ../blocks/topbar/topbar
 include ../blocks/footer/footer
+include ../blocks/order/order
+include ../blocks/services/services
 
 doctype html
 html(lang='ru')
@@ -32,7 +34,17 @@ html(lang='ru')
 
     })
 
+    // order
+
+    +order({
+      class: '',
+    })
+
     // services
+
+    +services({
+      
+    })
 
     // completed projects
 

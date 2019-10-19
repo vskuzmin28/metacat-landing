@@ -1,7 +1,148 @@
 // header
 
 .header {
-    position: relative;
+    margin-top: 60px;
     height: 470px;
-    background: @color-red;
+    background: url('../img/air.png') repeat-x bottom;
+
+    &__air, &__ship, &__line, &__title {
+        position: absolute;
+    }
+
+    &__air {
+        bottom: 0;
+    }
+
+    &__line {
+        top: 210px;
+        right: 254px;
+    }
+
+    &__ship {
+        right: 0;
+        top: 90px;
+    }
+
+    &__title {
+        left: 0;
+        top: 58px;
+    }
+
+}
+
+// slider
+
+.slider {
+
+    &__item {
+        position: relative;
+    }
+
+    &__buttons {
+        margin-top: 230px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+
+
+@media screen and (max-width: @tablet) {
+
+    .header {
+        &__air, &__ship, &__line, &__title {
+            width: 60%;
+            height: auto;
+            
+        }
+
+        &__line {
+            right: 20%;
+            width: 40%;
+            display: none;
+        }
+
+        &__title {
+            width: 50%;
+        }
+
+        &__ship {
+            top: 40%;
+            right: 4%;
+            margin: 0 auto;
+            width: 218px;
+            height: auto;
+        }
+    }
+
+    .slider__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: @mobile) {
+
+    .header {
+        height: auto;
+        padding-bottom: 40px;
+
+        &__air, &__ship, &__line, &__title {
+            //width: 60%;
+            position: relative;
+            
+        }
+
+        &__line {
+            right: 20%;
+            width: 40%;
+            display: none;
+        }
+
+        &__title {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: -20px;
+            margin-bottom: 90px;
+        }
+
+        &__ship {
+            top: inherit;
+            right: inherit;
+            margin: 0 auto;
+            width: 40%;
+            height: auto;
+        }
+    }
+
+    .slider__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider__buttons {
+        margin: 0 10%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .button {
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .ml-16 {
+            margin: 0;
+        }
+
+    }
+
 }

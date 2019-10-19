@@ -1,0 +1,11 @@
+include ../button/button
+
+mixin order(data)
+    - data = data || {};
+    .order.order_top
+        .container.order__container
+            h3.order__title Отправь заявку и получи скидку на разработку проека в размере 25%
+            form.form.order__form(class = data.class method = data.method action = data.action)
+                input.order__input(type="email" placeholder="E-mail" required)
+                input.button.button_colored.button_blue.ml-16(type="submit" value="Отправить")
+                a.button.button_colored.button_red.ml-16(href="#") Позвонить

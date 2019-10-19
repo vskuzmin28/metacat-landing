@@ -1,4 +1,34 @@
+include ../button/button
+
 mixin header(data)
     - data = data || {};
     header.header(role = data.role)
-        img(src="" alt="@@")
+        .container
+            .slider.header__slider
+                .slider__item
+                    img.header__title(src="../img/title.png" alt="@@")
+                    img.header__ship(src="../img/ship.png" alt="@@")
+                    img.header__line(src="../img/line.png" alt="@@")
+
+                    .slider__buttons
+                        +button({
+                            link: true,
+                            class: 'button_colored button_red',
+                            href: '#',
+                            title: '',
+                            value: 'Презентация',
+                            icon: true,
+                            iconClass: 'icon-pdf'
+                        })
+
+                        +button({
+                            link: true,
+                            class: 'ml-16',
+                            href: '#',
+                            title: '',
+                            value: 'Заполнить бриф',
+                            icon: true,
+                            iconClass: 'icon-breef'
+                        })
+
+                
