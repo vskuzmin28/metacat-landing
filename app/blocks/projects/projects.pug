@@ -1,0 +1,13 @@
+mixin projects(data)
+    - data = data || {};
+    .projects
+        .container
+            .block.projects__block
+                .block__title.wow.fadeIn РЕАЛИЗОВАННЫЕ ПРОЕКТЫ
+                .block__desc.wow.fadeIn Текст рыба, количество реализованных проектов
+                .block__content
+                    each item in data.items
+                        .block__item.projects__item(class = item.class)
+                            .block__container
+                                a.block__project(href="#" title="")
+                                    img(src = '../img/projects/' + item.img + '.png', alt = data.alt)

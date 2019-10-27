@@ -35,14 +35,27 @@
         margin-right: 34px;
         margin-bottom: 34px;
         width: 50%;
-        padding: 48px;
-        box-sizing: border-box;
-        border-radius: 4px;
-        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 
         &:last-child {
             margin-right: 0;
         }
+
+        &-title {
+            margin-top: 20px;
+            font-family: Muller;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: @color-blue-dark;
+        }
+
+    }
+
+    &__container {
+        padding: 48px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 
         span {
             font-size: 66px;
@@ -50,3 +63,41 @@
     }
 
 }
+
+@media screen and (max-width: @tablet) {
+
+.block {
+    &__content { 
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin: 0 1.6%;
+        max-width: 30%;
+    }
+    &__container {
+        text-align: center;
+    }
+}
+
+}
+
+@media screen and (max-width: @mobile) {
+
+    .block {
+        &__content { 
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        &__item {
+            margin: 0 0 20px 0;
+            max-width: 100%;
+            min-width: 100%;
+        }
+        &__container {
+            text-align: center;
+            max-width: 100%;
+            min-width: 100%;
+        }
+    }
+    
+    }

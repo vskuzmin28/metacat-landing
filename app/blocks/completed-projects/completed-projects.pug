@@ -1,0 +1,10 @@
+mixin button(data)
+    - data = data || {};
+    if data.link
+        a.button(class = data.class href = data.href title = data.title)!=data.value
+            if data.icon
+                span(class = data.iconClass)
+    if data.button
+        a.button(class = data.class href = data.href title = data.title)!=data.value
+            if data.icon
+                span(class = data.iconClass)

@@ -2,7 +2,7 @@ include ../button/button
 
 mixin order(data)
     - data = data || {};
-    .order.order_top
+    .order.order_top(class = data.class)
         .container.order__container
             h3.order__title Отправь заявку и получи скидку на разработку проека в размере 25%
             form.form.order__form(class = data.class method = data.method action = data.action)

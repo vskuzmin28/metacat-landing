@@ -9,9 +9,38 @@ mixin topbar(data)
                     each item in data.items
                         li.navigation__item
                             a.navigation__link(href = item.link title = item.title)!=item.value
-                    
+
+                a.pin.phone-link.bar__phone-link(href = 'tel:' + data.phonenumber title="")
+                    span.icon-placeholder.phone-link__icon
+                    span.phone-link__number Самара
+
                 a.phone-link.bar__phone-link(href = 'tel:' + data.phonenumber title="")
                     span.icon-phone.phone-link__icon
                     span.phone-link__number!=data.phonenumber
 
                 a.menu.icon-menu.bar__menu(href="#" title="")
+
+    nav.mobile-menu
+        .mobile-menu__close.icon-cross
+        .mobile-menu__container
+            a.mobile-menu__link(href = 'tel:' + data.phonenumber title="")
+                span.icon-placeholder
+                span.phone-link__number Самара
+
+            a.mobile-menu__link(href = 'tel:' + data.phonenumber title="")
+                span.icon-phone
+                span.phone-link__number 7 (846) 215-07-80
+            ul.mobile-menu__navigation
+                li.mobile-menu__item
+                    a.mobile-menu__link(href="#" title="") Услуги
+                    ul
+                        li
+                            a(href="#" title="") Разработка сайтов
+                        li
+                            a(href="#" title="") Продвижение
+                li.mobile-menu__item
+                    a.mobile-menu__link(href="#" title="") Проекты
+                li.mobile-menu__item
+                    a.mobile-menu__link(href="#" title="") Кто мы
+                li.mobile-menu__item
+                    a.mobile-menu__link(href="#" title="") Контакты

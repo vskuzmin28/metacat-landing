@@ -4,11 +4,13 @@ include ../blocks/topbar/topbar
 include ../blocks/footer/footer
 include ../blocks/order/order
 include ../blocks/services/services
+include ../blocks/projects/projects
+include ../blocks/specialists/specialists
 
 doctype html
 html(lang='ru')
   +head({
-    title: 'TITLE',
+    title: 'Креативное интернет агенство — <METACAT>',
     keywords: '',
     description: ''
   })
@@ -25,20 +27,19 @@ html(lang='ru')
         {link: '#contacts', title: '', value: 'Контакты'}
       ],
       phonenumber: '7 (846) 215-07-80'
-
     })
 
     // header
     +header({
       role: 'header',
+      class: 'wow fadeIn'
 
     })
 
     // order
-
-    +order({
+    //+order({
       class: '',
-    })
+    //})
 
     // services
 
@@ -49,8 +50,23 @@ html(lang='ru')
     // completed projects
 
     // experts
+    +specialists({
+      
+    })
 
     // projects
+    +projects({
+      items: [
+        {class: 'wow fadeIn', img: 'project-1', href: '', title: '', alt: ''},
+        {class: 'wow fadeIn', img: 'project-2', href: '', title: '', alt: ''},
+        {class: 'wow fadeIn', img: 'project-3', href: '', title: '', alt: ''}
+      ]
+    })
+
+    // order
+    //+order({
+    //  class: '',
+    //})
 
     // footer
     +footer({
