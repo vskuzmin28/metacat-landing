@@ -708,9 +708,6 @@ body *::selection {
 .popup__form .form__input {
   width: 100%;
 }
-.services {
-  margin-top: 60px;
-}
 .projects {
   margin: 60px 0;
 }
@@ -764,21 +761,37 @@ body *::selection {
     margin: 0 0 20px 0;
   }
 }
+.services {
+  margin-top: 60px;
+}
 .specialists {
+  position: relative;
   margin: 40px 0 100px 0;
   height: 180px;
   width: 100%;
   background: #FF5A64;
 }
+.specialists__info {
+  flex-grow: 1;
+  width: 100%;
+}
+.specialists__info .block__title {
+  margin: 30px 0 20px 0;
+}
 .specialists__block {
+  width: 100%;
   color: #fff;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .specialists__content {
-  margin: -40px 0 0 0;
+  margin: -38px 0 0 0;
   display: flex;
   justify-content: flex-end;
+}
+.specialists__content a:last-child {
+  margin-right: -26px;
 }
 .navigation {
   margin: 0;

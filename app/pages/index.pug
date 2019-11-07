@@ -6,6 +6,7 @@ include ../blocks/order/order
 include ../blocks/services/services
 include ../blocks/projects/projects
 include ../blocks/specialists/specialists
+include ../blocks/completed-projects/completed-projects
 
 doctype html
 html(lang='ru')
@@ -54,6 +55,11 @@ html(lang='ru')
       
     })
 
+    // order
+    +order({
+      class: '',
+    })
+
     // projects
     +projects({
       items: [
@@ -64,9 +70,9 @@ html(lang='ru')
     })
 
     // order
-    //+order({
-    //  class: '',
-    //})
+    +order({
+      class: '',
+    })
 
     // footer
     +footer({
