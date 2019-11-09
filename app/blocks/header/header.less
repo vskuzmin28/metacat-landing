@@ -1,9 +1,40 @@
 // header
 
+.right {
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+body {
+    padding-top: 490px;
+}
+
 .header {
+    top: -10px;
+    position: absolute;
+    width: 100%;
     margin-top: 60px;
     height: 470px;
     background: url('../img/air.png') repeat-x bottom;
+
+    &_trava {
+        top: -10px;
+        background: url('../img/bg-2.png') repeat-x bottom;
+
+        .header__title {
+            left: inherit;
+            right: 0;
+            top: 58px;
+        }
+
+        .header__kran {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    }
 
     &__air, &__ship, &__line, &__title {
         position: absolute;

@@ -1,49 +1,82 @@
-// button
+// completed-projects
 
-.button {
-    padding: 14px 20px;
-    border-radius: 4px;
-    background: @color-white;
-    display: inline-flex;
-    text-decoration: none;
-    color: @color-black;
-    font-family: Muller;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    box-shadow: 0px 16px 32px rgba(75, 60, 60, 0.1);
-    border: 0;
-    outline: 0;
-    cursor: pointer;
+.completed-projects {
+    position: relative;
+    margin: 40px 0 100px 0;
+    height: auto;
+    width: 100%;
 
-    &:hover {
-        text-decoration: none;
-    }
-
-    span {
-        margin-left: 20px;
+    
+    &__info {
+        flex-grow: 1;
+        width: 100%;
         color: @color-black;
-    }
 
-    &_colored {
-        color: @color-white;
+        .block__item {
+            width: 33.3%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
 
-        span {
-            margin-left: 20px;
-            color: @color-white;
+        .block__container {
+            min-height: 210px;
+            width: 100%;
+        }
+
+        .block__container {
+            text-align: center;
+        }
+        
+        .block__title {
+            margin: 30px 0 20px 0;
+        }
+
+        .block__subtitle {
+            font-size: 72px;
+            font-family: Muller;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        .block__subtext {
+            font-family: Muller;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .block__subtitle_purple {
+            color: @color-purple;
+        }
+
+        .block__subtitle_blue {
+            color: @color-blue;
+        }
+
+        .block__subtitle_red {
+            color: @color-red;
         }
 
     }
 
-    &_red {
-        background: @color-red;
-        box-shadow: 0px 16px 32px rgba(255, 90, 100, 0.2);
+    &__block {
+        width: 100%;
+        color: @color-white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    &_blue {
-        background: @color-blue;
-        box-shadow: 0px 16px 32px rgba(67, 138, 251, 0.2);
+    &__content {
+        margin: -38px 0 0 0;
+        display: flex;
+        justify-content: flex-end;
+
+        a:last-child {
+            margin-right: -26px;
+        }
+
     }
 
 }
-

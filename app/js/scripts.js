@@ -45,91 +45,18 @@ $('.phone-mask').mask('+7 (000) 000 0000');
 
 $(".phone-mask").prop("required", "true");
 
-// specialists
+$('.header_trava').hide();
 
-$('.specialistContentTwo, .specialistContentThree, .specialistContentFour, .specialistContentFive').hide();
-$('.photoTwo, .photoThree, .photoFour, .photoFive').hide();
 
-$('.specialistOne').click(function(e){
-    e.preventDefault();
-    $('.specialistOne').addClass('specialists__list-link_active');
-    $('.specialistTwo, .specialistThree, .specialistFour, .specialistFive').removeClass('specialists__list-link_active');
-    $('.photoOne, .specialistContentOne').fadeIn();
-    $('.photoTwo, .photoThree, .photoFour, .photoFive').hide();
-    $('.specialistContentTwo, .specialistContentThree, .specialistContentFour, .specialistContentFive').hide();
-})
+setTimeout(function() { 
+    $('.header_trava').fadeIn('slow');
+    $('.header_default').fadeOut('slow');
+}, 5000);
 
-$('.specialistTwo').click(function(e){
-    e.preventDefault();
-    $('.specialistTwo').addClass('specialists__list-link_active');
-    $('.specialistOne, .specialistThree, .specialistFour, .specialistFive').removeClass('specialists__list-link_active');
-    $('.photoTwo, .specialistContentTwo').fadeIn();
-    $('.photoOne, .photoThree, .photoFour, .photoFive').hide();
-    $('.specialistContentOne, .specialistContentThree, .specialistContentFour, .specialistContentFive').hide();
-})
-
-$('.specialistThree').click(function(e){
-    e.preventDefault();
-    $('.specialistThree').addClass('specialists__list-link_active');
-    $('.specialistTwo, .specialistOne, .specialistFour, .specialistFive').removeClass('specialists__list-link_active');
-    $('.photoThree, .specialistContentThree').fadeIn();
-    $('.photoTwo, .photoOne, .photoFour, .photoFive').hide();
-    $('.specialistContentOne, .specialistContentTwo, .specialistContentFour, .specialistContentFive').hide();
-})
-
-$('.specialistFour').click(function(e){
-    e.preventDefault();
-    $('.specialistFour').addClass('specialists__list-link_active');
-    $('.specialistTwo, .specialistOne, .specialistThree, .specialistFive').removeClass('specialists__list-link_active');
-    $('.photoFour, .specialistContentFour').fadeIn();
-    $('.photoTwo, .photoOne, .photoThree, .photoFive').hide();
-    $('.specialistContentOne, .specialistContentTwo, .specialistContentThree, .specialistContentFive').hide();
-})
-
-$('.specialistFive').click(function(e){
-    e.preventDefault();
-    $('.specialistFive').addClass('specialists__list-link_active');
-    $('.specialistTwo, .specialistOne, .specialistThree, .specialistFour').removeClass('specialists__list-link_active');
-    $('.photoFive, .specialistContentFive').fadeIn();
-    $('.photoTwo, .photoOne, .photoThree, .photoFour').hide();
-    $('.specialistContentOne, .specialistContentTwo, .specialistContentThree, .specialistContentFour').hide();
-})
-
-// cases
-
-$('.slideTwo, .slideThree, .slideFour').hide();
-
-$('.linkSlideOne').click(function(e){
-    e.preventDefault();
-    $('.linkSlideOne').addClass('slider-nav__link_active');
-    $('.linkSlideTwo, .linkSlideThree, .linkSlideFour').removeClass('slider-nav__link_active');
-    $('.slideOne').fadeIn();
-    $('.slideTwo, .slideThree, .slideFour').hide();
-})
-
-$('.linkSlideTwo').click(function(e){
-    e.preventDefault();
-    $('.linkSlideTwo').addClass('slider-nav__link_active');
-    $('.linkSlideOne, .linkSlideThree, .linkSlideFour').removeClass('slider-nav__link_active');
-    $('.slideTwo').fadeIn();
-    $('.slideOne, .slideThree, .slideFour').hide();
-})
-
-$('.linkSlideThree').click(function(e){
-    e.preventDefault();
-    $('.linkSlideThree').addClass('slider-nav__link_active');
-    $('.linkSlideTwo, .linkSlideOne, .linkSlideFour').removeClass('slider-nav__link_active');
-    $('.slideThree').fadeIn();
-    $('.slideTwo, .slideOne, .slideFour').hide();
-})
-
-$('.linkSlideFour').click(function(e){
-    e.preventDefault();
-    $('.linkSlideFour').addClass('slider-nav__link_active');
-    $('.linkSlideTwo, .linkSlideThree, .linkSlideOne').removeClass('slider-nav__link_active');
-    $('.slideFour').fadeIn();
-    $('.slideTwo, .slideThree, .slideOne').hide();
-})
+setTimeout(function() { 
+    $('.header_default').fadeIn('slow');
+    $('.header_trava').fadeOut('slow');
+}, 10000);
 
 // mobile menu
 

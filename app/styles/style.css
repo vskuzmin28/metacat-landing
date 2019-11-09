@@ -220,43 +220,68 @@ body *::selection {
   background: #2185FB;
   box-shadow: 0px 16px 32px rgba(67, 138, 251, 0.2);
 }
-.button {
-  padding: 14px 20px;
-  border-radius: 4px;
-  background: #fff;
-  display: inline-flex;
-  text-decoration: none;
+.completed-projects {
+  position: relative;
+  margin: 40px 0 100px 0;
+  height: auto;
+  width: 100%;
+}
+.completed-projects__info {
+  flex-grow: 1;
+  width: 100%;
   color: #000;
+}
+.completed-projects__info .block__item {
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.completed-projects__info .block__container {
+  min-height: 210px;
+  width: 100%;
+}
+.completed-projects__info .block__container {
+  text-align: center;
+}
+.completed-projects__info .block__title {
+  margin: 30px 0 20px 0;
+}
+.completed-projects__info .block__subtitle {
+  font-size: 72px;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 700;
+}
+.completed-projects__info .block__subtext {
   font-family: Muller;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  box-shadow: 0px 16px 32px rgba(75, 60, 60, 0.1);
-  border: 0;
-  outline: 0;
-  cursor: pointer;
 }
-.button:hover {
-  text-decoration: none;
+.completed-projects__info .block__subtitle_purple {
+  color: #DC21FB;
 }
-.button span {
-  margin-left: 20px;
-  color: #000;
+.completed-projects__info .block__subtitle_blue {
+  color: #2185FB;
 }
-.button_colored {
+.completed-projects__info .block__subtitle_red {
+  color: #FF5A64;
+}
+.completed-projects__block {
+  width: 100%;
   color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.button_colored span {
-  margin-left: 20px;
-  color: #fff;
+.completed-projects__content {
+  margin: -38px 0 0 0;
+  display: flex;
+  justify-content: flex-end;
 }
-.button_red {
-  background: #FF5A64;
-  box-shadow: 0px 16px 32px rgba(255, 90, 100, 0.2);
-}
-.button_blue {
-  background: #2185FB;
-  box-shadow: 0px 16px 32px rgba(67, 138, 251, 0.2);
+.completed-projects__content a:last-child {
+  margin-right: -26px;
 }
 .footer {
   padding: 20px 0;
@@ -280,10 +305,35 @@ body *::selection {
     display: block;
   }
 }
+.right {
+  float: right;
+  position: absolute;
+  right: 0;
+}
+body {
+  padding-top: 490px;
+}
 .header {
+  top: -10px;
+  position: absolute;
+  width: 100%;
   margin-top: 60px;
   height: 470px;
   background: url('../img/air.png') repeat-x bottom;
+}
+.header_trava {
+  top: -10px;
+  background: url('../img/bg-2.png') repeat-x bottom;
+}
+.header_trava .header__title {
+  left: inherit;
+  right: 0;
+  top: 58px;
+}
+.header_trava .header__kran {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .header__air,
 .header__ship,

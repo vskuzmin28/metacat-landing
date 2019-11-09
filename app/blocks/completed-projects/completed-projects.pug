@@ -1,10 +1,21 @@
-mixin button(data)
+mixin completed-projects
     - data = data || {};
-    if data.link
-        a.button(class = data.class href = data.href title = data.title)!=data.value
-            if data.icon
-                span(class = data.iconClass)
-    if data.button
-        a.button(class = data.class href = data.href title = data.title)!=data.value
-            if data.icon
-                span(class = data.iconClass)
+    .completed-projects
+        .container.specialists__container
+            .block.specialists__block
+                .block__info.completed-projects__info
+                    .block__title.wow.fadeIn Наша статистика
+                    .block__desc.wow.fadeIn Текст рыба, количество реализованных проектов
+                    .block__content
+                        .block__item
+                            .block__container
+                                .block__subtitle.block__subtitle_blue 65
+                                .block__project.block__subtext Реализованных проектов
+                        .block__item
+                            .block__container
+                                .block__subtitle.block__subtitle_red 87
+                                .block__project.block__subtext Сайтов в ТОП 10 Яндекса
+                        .block__item
+                            .block__container
+                                .block__subtitle.block__subtitle_purple 37
+                                .block__project.block__subtext Забрендированных компаний

@@ -2,16 +2,18 @@ include ../button/button
 
 mixin header(data)
     - data = data || {};
-    header.header(role = data.role)
+
+    header.header.header_trava(role = data.role)
         .container
             .slider.header__slider
-                .slider__item
-                    img.header__title.wow.fadeIn(src="../img/title.png" alt="@@")
-                    img.header__ship.wow.fadeInLeft(src="../img/ship.png" alt="@@")
-                    img.header__line.wow.fadeInLeft(src="../img/line.png" alt="@@")
+                .slider__item.slider__item--one
+                    img.header__title.wow.fadeIn(src="../img/title3.png" alt="@@")
+                    //img.header__ship.wow.fadeInLeft(src="../img/titel2.png" alt="@@")
+                    //img.header__line.wow.fadeInLeft(src="../img/line.png" alt="@@")
+                    img.header__kran.wow.fadeInLeft(src="../img/kran2.png" alt="@@")
 
                     .slider__buttons
-                        +button({
+                        //+button({
                             link: true,
                             class: 'button_colored button_red',
                             href: '#',
@@ -19,16 +21,44 @@ mixin header(data)
                             value: 'Презентация',
                             icon: true,
                             iconClass: 'icon-pdf'
-                        })
+                        //})
 
                         +button({
                             link: true,
-                            class: 'ml-16',
-                            href: '#',
+                            class: 'button_colored button_red right',
+                            href: '../img/breef.pdf',
                             title: '',
                             value: 'Заполнить бриф',
                             icon: true,
                             iconClass: 'icon-breef'
                         })
 
-                
+    header.header.header_default(role = data.role)
+        .container
+            .slider.header__slider
+                .slider__item.slider__item--one
+                    img.header__title.wow.fadeIn(src="../img/title.png" alt="@@")
+                    img.header__ship.wow.fadeInLeft(src="../img/ship.png" alt="@@")
+                    img.header__line.wow.fadeInLeft(src="../img/line.png" alt="@@")
+
+                    .slider__buttons
+                        //+button({
+                            link: true,
+                            class: 'button_colored button_red',
+                            href: '#',
+                            title: '',
+                            value: 'Презентация',
+                            icon: true,
+                            iconClass: 'icon-pdf'
+                        //})
+
+                        +button({
+                            link: true,
+                            class: 'button_colored button_red',
+                            href: '../img/breef.pdf',
+                            title: '',
+                            value: 'Заполнить бриф',
+                            icon: true,
+                            iconClass: 'icon-breef'
+                        })
+
