@@ -3,26 +3,44 @@
 .projects {
 
     margin: 60px 0;
+    height: auto;
+    padding-bottom: 120px;
 
+    @media screen and (max-width: @desktop) {
+        width: 100%;
+        overflow: hidden;
+    }
+    
     .block__content {
         flex-direction: row;
     }
+
+
 
     .projects__item {
         
         max-width: 100%;
         min-width: 63%;
         margin: 0 5.5% 0 0;
+        height: 100px;
 
         &:last-child {
             margin-right: 0;
         }
 
         img {
-            width: 100%;
-            
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
         }
 
+    }
+
+    .block__container {
+        min-height: 200px;
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
     }
 
     .block__container {

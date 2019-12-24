@@ -54,7 +54,12 @@ body *::selection {
 
 .container {
   margin: 0 auto;
-  width: 1140px;
+  width: 1040px;
+
+  @media screen and (max-width: @tablet) {
+    width: 100%;
+  }
+
 }
 
 // form

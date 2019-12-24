@@ -16,10 +16,6 @@ $('.send-form').submit(function() {
   return false;
 })
 
-/* wow animation */
-
-new WOW().init();
-
 // popup
 
 $('.popupCall, .popupPolytic, .popupThanks').hide();
@@ -68,4 +64,8 @@ $('.menu').click(function(){
 
 $('.mobile-menu__close').click(function(){
     $('.mobile-menu').fadeOut();
-})
+});
+
+/* wow animation */
+
+new WOW().init();
